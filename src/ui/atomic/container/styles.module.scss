@@ -20,6 +20,7 @@ $brand-outer-border: $brand-element-primary;
   height: 90%;
   background-color: $brand-background-primary;
   border: $brand-inner-border solid 1px;
+  box-shadow: 0 0 1rem 0px $brand-inner-border;
 }
 
 .medium {

@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 interface ContainerProps {
   type: "inner" | "medium" | "outer";
-  customStyles: Record<string, string> | undefined;
+  customStyles: React.CSSProperties | undefined;
 }
 
 type ContainerPropsWithChildren = PropsWithChildren<ContainerProps>;

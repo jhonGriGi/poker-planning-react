@@ -1,0 +1,14 @@
+.section {
+  font-weight: bold;
+  max-width:  15rem;
+  text-align: left;
+  padding: 0.5rem;
+
+  & > label {
+    margin: 0.5rem;
+  }
+
+  & > input {
+    margin: 0.5rem;
+  }
+}

@@ -1,11 +1,11 @@
 import "./App.css";
-import InputRadio from "./ui/atomic/input-radio/input-radio";
+import RadioSelector from "./ui/molecules/radio-selector/radio-selector";
+import Player from "./ui/organisms/player/player";
 
 function App() {
   return (
     <main>
-      <InputRadio id="q" name="test" onChange={() => console.log("")} />
-      <InputRadio id="q" name="test" onChange={() => console.log("")} />
+      <Player/>
     </main>
   );
 }
