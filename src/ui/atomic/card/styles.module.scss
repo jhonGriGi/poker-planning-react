@@ -1,0 +1,33 @@
+@use "../../scss-core/variables.scss" as *;
+
+$card-background-primary: transparent;
+$card-background-hover: $brand-element-tertiary;
+$card-background-selected: $brand-element-fourth;
+
+%card {
+  width: 2.5rem;
+  height: 4rem;
+  cursor: pointer;
+  border: $brand-color-tertiary solid 1px;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.card {
+  @extend %card;
+  color: $brand-text-primary;
+  background-color: $card-background-primary;
+
+  &:hover {
+    background-color: $card-background-hover;
+    transform: translateY(-5px);
+  }
+}
+
+.card__active {
+  @extend %card;
+  background-color: $brand-element-fourth;
+  color: $brand-text-secondary;
+  transform: translateY(-5px);
+}

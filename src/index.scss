@@ -1,0 +1,20 @@
+@use "ui/scss-core/variables.scss" as *;
+@import "normalize.css";
+
+:root {
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
+    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
+    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+}
+
+body {
+  color: $brand-text-primary;
+  height: 100vh;
+  margin: 0;
+  width: 100vw;
+  background: radial-gradient(
+    ellipse at center,
+    $brand-color-primary,
+    $brand-color-secondary
+  );
+}
