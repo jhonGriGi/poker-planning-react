@@ -1,0 +1,25 @@
+@use "../../scss-core/variables.scss" as *;
+
+input[type="radio"] {
+  appearance: none;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: $brand-input-border solid 1px;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+  background-color: $brand-input-background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:checked::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    border-radius: 50%;
+    background-color: $brand-input-border;
+  }
+}

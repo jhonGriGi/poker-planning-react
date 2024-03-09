@@ -1,10 +1,11 @@
 import "./App.css";
-import TextAtom from "./ui/atomic/text/text-atom";
+import InputRadio from "./ui/atomic/input-radio/input-radio";
 
 function App() {
   return (
     <main>
-      <TextAtom>Darwin</TextAtom>
+      <InputRadio id="q" name="test" onChange={() => console.log("")} />
+      <InputRadio id="q" name="test" onChange={() => console.log("")} />
     </main>
   );
 }

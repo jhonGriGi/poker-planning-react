@@ -1,0 +1,6 @@
+@use "../../scss-core/variables.scss" as *;
+
+.label {
+  color: $brand-text-primary;
+  font-size: 1rem;
+}

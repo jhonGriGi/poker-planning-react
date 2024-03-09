@@ -1,0 +1,39 @@
+@use "../../scss-core/variables.scss" as *;
+
+$brand-background-primary: $brand-color-secondary;
+$brand-background-secondary: transparent;
+
+$brand-inner-border: $brand-element-primary;
+$brand-medium-border: $brand-element-quintuple;
+$brand-outer-border: $brand-element-primary;
+
+%container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20rem;
+}
+.inner {
+  @extend %container;
+  width: 95%;
+  height: 90%;
+  background-color: $brand-background-primary;
+  border: $brand-inner-border solid 1px;
+}
+
+.medium {
+  @extend %container;
+  width: 90%;
+  height: 85%;
+  background-color: $brand-background-secondary;
+  border: $brand-medium-border solid 1px;
+}
+
+.outer {
+  @extend %container;
+  width: 45rem;
+  height: 25rem;
+  background-color: $brand-background-secondary;
+  border: $brand-outer-border solid 1px;
+}

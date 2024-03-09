@@ -1,0 +1,11 @@
+@use "../../scss-core/variables.scss" as *;
+
+.input[type="text"] {
+  border: $brand-input-border solid 1px;
+  background-color: $brand-input-background;
+  min-width: 5rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  outline: none;
+  color: $brand-text-primary;
+}
