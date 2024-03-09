@@ -1,0 +1,17 @@
+@use "../../scss-core/variables.scss" as *;
+
+$brand-avatar-background: $brand-element-quintuple;
+$brand-text-color: $brand-color-secondary;
+
+.avatar {
+  width: 1rem;
+  height: 1rem;
+  padding: 1rem;
+  background-color: $brand-avatar-background;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: $brand-text-color;
+}

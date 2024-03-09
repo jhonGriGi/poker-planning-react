@@ -1,0 +1,7 @@
+@use "../../scss-core/variables.scss" as *;
+
+$brand-title-color: $brand-text-primary;
+
+.title {
+  color: $brand-title-color;
+}

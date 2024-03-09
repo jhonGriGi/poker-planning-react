@@ -1,13 +1,12 @@
-import './App.css'
-import Card from './ui/atomic/card/card'
+import "./App.css";
+import TextAtom from "./ui/atomic/text/text-atom";
 
 function App() {
-
   return (
     <main>
-      <Card onClick={() => console.log('')}>0</Card>
+      <TextAtom>Darwin</TextAtom>
     </main>
-  )
+  );
 }
 
-export default App
+export default App;

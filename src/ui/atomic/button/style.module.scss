@@ -1,0 +1,44 @@
+@use "../../scss-core/variables.scss" as *;
+
+$brand-button-primary: $brand-element-primary;
+$brand-button-secondary: $brand-element-secondary;
+$brand-button-tertiary: transparent;
+
+%button {
+  min-width: 10rem;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+}
+
+.button-primary {
+  @extend %button;
+  background-color: $brand-button-primary;
+  color: $brand-text-primary;
+  border: none;
+  padding: 0.8rem 1rem;
+}
+
+.button-secondary {
+  @extend %button;
+  padding: 1rem;
+  color: $brand-text-secondary;
+}
+
+.button-tertiary {
+  @extend %button;
+  background-color: $brand-button-tertiary;
+  color: $brand-text-primary;
+  border: $brand-element-secondary solid 1px;
+  padding: 0.5rem 1rem;
+
+  &:hover {
+    background-color: $brand-button-secondary;
+    color: $brand-text-secondary;
+  }
+}
