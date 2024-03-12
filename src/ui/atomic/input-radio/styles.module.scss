@@ -12,6 +12,7 @@ input[type="radio"] {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 
   &:checked::before {
     content: "";

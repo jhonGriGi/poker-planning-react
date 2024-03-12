@@ -1,5 +1,10 @@
 .section {
-  max-width: 6rem;
-  justify-content: space-evenly;
+  justify-content: space-between;
   display: flex;
+  padding: 1rem;
+  border: white 1px solid;
+}
+
+.label_blue {
+  color: blue;
 }

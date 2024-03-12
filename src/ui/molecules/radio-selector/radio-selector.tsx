@@ -20,10 +20,10 @@ const RadioSelector: React.FC<RadioSelectorPropsWithChildren> = ({
   children,
 }) => {
   return (
-    <section className={`${styles.section}`}>
-      <LabelAtomic htmlFor={htmlFor}>{children}</LabelAtomic>
+    <div className={`${styles.section}`}>
+      <LabelAtomic htmlFor={htmlFor} properties={styles.label_blue}>{children}</LabelAtomic>
       <InputRadio id={inputId} name={inputName} onChange={inputOnChange} />
-    </section>
+    </div>
   );
 };
 

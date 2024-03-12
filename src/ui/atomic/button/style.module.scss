@@ -9,10 +9,17 @@ $brand-button-tertiary: transparent;
   border-radius: 2rem;
   font-weight: bold;
   cursor: pointer;
+  outline: none;
+  border: none;
 
   &:disabled {
     opacity: 0.8;
     cursor: not-allowed;
+  }
+
+  &:active {
+    transition: transform 0.3s linear;
+    transform: scale(0.8);
   }
 }
 
